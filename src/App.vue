@@ -5,6 +5,7 @@
     <About></About>
     <Skill></Skill>
     <Work></Work>
+    <Post></Post>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import TopPage from './components/TopPage.vue'
 import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Work from './components/Work.vue'
+import Post from './components/Post.vue'
 
 
 export default {
@@ -23,6 +25,7 @@ export default {
     About,
     Skill,
     Work,
+    Post
   }
 }
 </script>
