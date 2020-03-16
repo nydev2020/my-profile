@@ -10,6 +10,7 @@ import Post from './components/Post.vue';
 Vue.use(Router);
 
 export default new Router({
+  mode: "history",
   routes: [{path: "/", component: TopPage},
    {path: "/about", component: About},
    {path: "/header", component: Header},
