@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h3>スクールでの学習</h3>
+    <h2>Skill</h2>
+    <h4>スクールでの学習</h4>
     <ul>
       <li>Html</li>
       <li>Css(Scss)</li>
@@ -9,7 +10,7 @@
       <li>JavaScript</li>
       <li>Jquery</li>
     </ul>
-    <h3>スクール外の学習</h3>
+    <h4>スクール外の学習</h4>
     <ul>
       <li>Vue.js</li>
       <li>SQL(MySQL)</li>
