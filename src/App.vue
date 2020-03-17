@@ -31,6 +31,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
   }
   nav > ul > li {
     font-size: 1rem;

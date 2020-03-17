@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="about">
     <h2>About</h2>
     <table>
       <tr>
@@ -63,19 +63,24 @@ export default {
 </script>
 
 <style scoped>
-  .section {
+  .about {
     padding: 0 20%;
   }
   h2 {
     font-size: 40px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     text-align: center;
     border-bottom: 2px solid darkblue;
   }
   table {
     width: 100%;
-    padding-left: 35%;
+    padding: 0 30%;
   }
   tr {
     line-height: 2rem;
+  }
+  td {
+    padding-left: 10%;
+    overflow: hidden;
   }
 </style>
