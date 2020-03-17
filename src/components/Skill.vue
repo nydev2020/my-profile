@@ -38,7 +38,6 @@ export default {
       border-bottom: 2px solid darkblue;
     }
     h4 {
-      // width: 25%;
       text-align: center;
     }
     p {

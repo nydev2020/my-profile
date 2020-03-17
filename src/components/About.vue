@@ -74,9 +74,13 @@ export default {
   }
   table {
     width: 100%;
-    padding-left: 35%;
+    padding: 0 30%;
   }
   tr {
     line-height: 2rem;
+  }
+  td {
+    padding-left: 15%;
+    overflow: hidden;
   }
 </style>
