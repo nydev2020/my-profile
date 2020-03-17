@@ -80,7 +80,7 @@ export default {
     line-height: 2rem;
   }
   td {
-    padding-left: 15%;
+    padding-left: 10%;
     overflow: hidden;
   }
 </style>

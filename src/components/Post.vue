@@ -1,7 +1,7 @@
 <template>
   <div class="post">
     <h2>Post</h2>
-    <p>Twitterを始めまして日々のアウトプットをつぶやいています。</p>
+    <p>Twitterを始めまして日々のアウトプットをつぶやいています。主にはアウトプットチャンネルになります。</p>
     <div class="post--container">
       <table>
         <tr>
@@ -10,7 +10,7 @@
         </tr>
         <tr>
           <th>GitHub</th>
-          <td>yoshinori0526</td>
+          <td>nydev2020</td>
         </tr>
         <tr>
           <th>Twitter</th>
@@ -34,6 +34,9 @@ export default {
       filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
       text-align: center;
       border-bottom: 2px solid darkblue;
+    }
+    p {
+      padding: 0 10%;
     }
     h4 {
       text-align: center;
