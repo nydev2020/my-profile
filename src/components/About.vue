@@ -68,6 +68,7 @@ export default {
   }
   h2 {
     font-size: 40px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     text-align: center;
     border-bottom: 2px solid darkblue;
   }

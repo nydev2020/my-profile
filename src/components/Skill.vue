@@ -1,5 +1,5 @@
 <template>
-  <div class="work">
+  <div class="skill">
     <h2>Skill</h2>
     <div class="work--container">
       <h4>スクールでの学習</h4>
@@ -29,10 +29,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .work {
+  .skill {
     padding: 0 20%;
     h2 {
       font-size: 40px;
+      filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
       text-align: center;
       border-bottom: 2px solid darkblue;
     }
