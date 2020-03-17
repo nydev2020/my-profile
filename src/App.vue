@@ -19,7 +19,12 @@
 
 
 
-<style>
+<style lang="scss">
+  @mixin sp {
+    @media (max-width: (769px)) {
+      @content;
+    }  
+  } 
   .container {
     width: 100%;
     box-sizing: border-box;
@@ -32,10 +37,14 @@
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0;
   }
   nav > ul > li {
     font-size: 1rem;
     padding: 20px 50px;
+    @include sp{
+      padding: 20px 2%;
+    }
   }
   li > a {
     color: #efefef;

@@ -27,8 +27,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @mixin sp {
+    @media (max-width: (769px)) {
+      @content;
+    }
+  }  
   .post {
     padding: 0 20%;
+    @include sp{
+      padding: 20px 5%;
+    }
     h2 {
       font-size: 40px;
       filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
@@ -43,6 +51,9 @@ export default {
     }
     &--container {
       padding: 0 30%;
+      @include sp{
+      padding: 20px 5%;
+      }
       table {
         width: 100%;
         th {
