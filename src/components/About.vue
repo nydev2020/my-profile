@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="about">
     <h2>About</h2>
     <table>
       <tr>
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style scoped>
-  .section {
+  .about {
     padding: 0 20%;
   }
   h2 {
