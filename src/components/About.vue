@@ -62,9 +62,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @mixin sp {
+    @media (max-width: (769px)) {
+      @content;
+    }  
+  }
   .about {
     padding: 0 20%;
+    @include sp{
+      padding: 20px 5%;
+    }
   }
   h2 {
     font-size: 40px;
@@ -75,9 +83,12 @@ export default {
   table {
     width: 100%;
     padding: 0 30%;
+    @include sp{
+      padding: 0 10%;
+    }
   }
   tr {
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   td {
     padding-left: 10%;

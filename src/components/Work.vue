@@ -23,8 +23,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @mixin sp {
+    @media (max-width: (769px)) {
+      @content;
+    }  
+  }
   .work {
     padding: 0 20%;
+    @include sp{
+      padding: 20px 5%;
+    }
     h2 {
     font-size: 40px;
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
@@ -37,7 +45,9 @@ export default {
       gap: 5%;
       grid-template-columns: 47.5% 47.5%;
       grid-template-rows: 300px; 
-
+      @include sp{
+      display: block;
+      }
       &--box {
         width: 100%;
         padding: 16px;
@@ -45,6 +55,9 @@ export default {
         border: 1px solid #dddddd;
         border-radius: 5px;
         box-shadow: 5px 5px 10px #eee;
+        @include sp{
+        margin-bottom: 40px;
+        } 
         h4 {
           text-align: center;
           margin: 8px 0;
