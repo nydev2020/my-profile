@@ -1,6 +1,6 @@
 <template>
   <div class="top">
-    <h3><span>hello</span></h3>
+    <h3><span>Hello</span></h3>
     <h2><span>Welcome to</span></h2>
     <h1><span>Nishinaka's Profile</span></h1>
   </div>

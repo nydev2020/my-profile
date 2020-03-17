@@ -1,7 +1,7 @@
 <template>
   <div class="post">
     <h2>Post</h2>
-    <p>Twitterを始めまして日々のアウトプットをつぶやいています。主にはアウトプットチャンネルになります。</p>
+    <p>Twitterを始めまして日々の学習のアウトプットをつぶやいています。</p>
     <div class="post--container">
       <table>
         <tr>
@@ -39,11 +39,13 @@ export default {
     }
     h2 {
       font-size: 40px;
+      letter-spacing: 5px;
       filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
       text-align: center;
       border-bottom: 2px solid darkblue;
     }
     p {
+      text-align: center;
       padding: 0 10%;
     }
     h4 {
@@ -56,6 +58,7 @@ export default {
       }
       table {
         width: 100%;
+        margin-top: 40px;
         th {
           width: 40%;
         }

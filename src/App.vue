@@ -9,7 +9,9 @@
         <li><router-link to="/post" active-class="link-active">Post</router-link></li>
       </ul>
     </nav>
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -25,6 +27,15 @@
       @content;
     }  
   } 
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter-to, .fade-leave  {
+    opacity: 1;
+  }
   .container {
     width: 100%;
     box-sizing: border-box;
@@ -47,12 +58,19 @@
     }
   }
   li > a {
+    font-size: 20px;
     color: #efefef;
     letter-spacing: 2px;
     text-decoration: none;
+    transition: .7s;
   }
+  a:hover {
+    opacity: .8;
+    color: darkblue;
+  }
+  
   .link-active {
     color: darkblue;
-    font-weight: 900;
+    // font-weight: 900;
   }
 </style>

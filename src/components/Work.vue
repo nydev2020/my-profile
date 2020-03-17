@@ -3,14 +3,25 @@
     <h2>Work</h2>
     <div class="work--container">
       <div class="work--container--box">
-        <h4>フリマ</h4>
-        <p>スクールでのグループ製作物</p>
+        <!-- <a href="http://3.114.223.215"> -->
+        <a href="#">
+        <h4>初の個人開発</h4>
+        </a>
+        <p>文章・画像投稿アプリ</p>
+        <p>ターゲットも目的もなく作ってしまったが反省</p>
+        <p>ここに載せることで今度同じことを繰り返さない戒めの意味を込めています。</p>
         <img src="#" alt="イメージ画像">
       </div>
       <div class="work--container--box">
+        <a href="http://18.177.4.93" target="_blank">
         <h4>フリマ</h4>
+        </a>
         <p>スクールでのグループ製作物</p>
-        <img src="#" alt="イメージ画像">
+        <p>使用した技術</p>
+        <p>Ruby/Rails/haml/scss/JavaScript/Jquery</p>
+        <p>GitHubを用いた開発</p>
+        <p>開発担当は、PayjpのAPIを使用した決済</p>
+        <img src="../assets/furimalogo.png" width=250px alt="イメージ画像">
       </div>
     </div>
   </div>
@@ -35,6 +46,7 @@ export default {
     }
     h2 {
     font-size: 40px;
+    letter-spacing: 5px;
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     text-align: center;
     border-bottom: 2px solid darkblue;
@@ -58,6 +70,9 @@ export default {
         @include sp{
         margin-bottom: 40px;
         } 
+        a {
+          text-decoration: none;
+        }
         h4 {
           text-align: center;
           margin: 8px 0;
@@ -68,6 +83,8 @@ export default {
           margin: 0;
         }
         img {
+          width: 80%;
+         
           padding: 8px 40px;
         }
       }
