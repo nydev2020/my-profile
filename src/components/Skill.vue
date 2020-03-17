@@ -1,23 +1,23 @@
 <template>
   <div class="skill">
     <h2>Skill</h2>
-    <div class="work--container">
-      <h4>スクールでの学習</h4>
-        <ul>
-          <li>Html</li>
-          <li>Css(Scss)</li>
-          <li>Ruby</li>
-          <li>Ruby on Rails</li>
-          <li>JavaScript</li>
-          <li>Jquery</li>
-        </ul>
-      <h4>スクール外の学習</h4>
-        <ul>
-          <li>Vue.js</li>
-          <li>SQL(MySQL)</li>
-          <li>Git(GitHub)</li>
-          <li>基本情報技術者</li>
-        </ul>
+    <h4>使用言語・フレームワークなど</h4>
+    <p>【注意】Hello Worldのみは除いています。これまでの学習のメインはRubyとRailsを使った開発です。TECH::CAMPで個人開発としてブログアプリ・チャットアプリを行い、グループ開発でフリマという会員制のフリーマーケットアプリを作成しました。</p>
+    <div class="skill--container">
+      <ul>
+        <li>Html</li>
+        <li>Css(Scss)</li>
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
+        <li>JavaScript</li>
+        <li>Jquery</li>
+      </ul>
+      <ul>
+        <li>Vue.js</li>
+        <li>SQL(MySQL)</li>
+        <li>Git(GitHub)</li>
+        <li>基本情報技術者</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -38,17 +38,20 @@ export default {
       border-bottom: 2px solid darkblue;
     }
     h4 {
-      width: 25%;
+      // width: 25%;
       text-align: center;
+    }
+    p {
+      padding: 0 10%;
     }
     &--container {
       display: flex;
       justify-content: center;
       ul {
         width: 25%;
-      }
-      ul > li {
-        line-height: 2rem;
+        li {
+          line-height: 2rem;
+        }
       }
     }
   }
