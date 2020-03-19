@@ -13,6 +13,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @mixin sp {
+    @media (max-width: (769px)) {
+      @content;
+    }  
+  } 
   .top {
     width: 100%;
     h3 {
@@ -36,17 +41,25 @@ export default {
         padding: 20px;
         border-bottom: 2px solid darkblue;
       }
+      @include sp{
+        font-size: 20px;
+        padding: 0;
+      } 
     }
     h1 {
       text-align: center;
       height: 250px;
       line-height: 150px;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
       span {
         padding: 20px 40px;
         border-bottom: 2px solid darkblue;
       }
+      @include sp{
+        font-size: 20px;
+        padding: 0;
+      } 
     }
   }
   

@@ -50,6 +50,9 @@ export default {
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     text-align: center;
     border-bottom: 2px solid darkblue;
+    @include sp{
+      margin: 0;
+    } 
     }
     &--container {
       padding: 20px;
@@ -68,7 +71,7 @@ export default {
         border-radius: 5px;
         box-shadow: 5px 5px 10px #eee;
         @include sp{
-        margin-bottom: 40px;
+          margin-bottom: 40px;
         } 
         a {
           text-decoration: none;
